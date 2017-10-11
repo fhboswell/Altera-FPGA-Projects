@@ -1,0 +1,1093 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Intel and sold by Intel or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
+
+// DATE "10/10/2017 15:54:21"
+
+// 
+// Device: Altera 5CSEBA6U23I7DK Package UFBGA672
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module top (
+	LED,
+	SW);
+output 	[3:0] LED;
+input 	[3:0] SW;
+
+// Design Ports Information
+// LED[0]	=>  Location: PIN_W15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED[1]	=>  Location: PIN_AA24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED[2]	=>  Location: PIN_V16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LED[3]	=>  Location: PIN_V15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW[0]	=>  Location: PIN_Y24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW[2]	=>  Location: PIN_W21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW[1]	=>  Location: PIN_W24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SW[3]	=>  Location: PIN_W20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \FA1|Mult2~8 ;
+wire \FA1|Mult2~9 ;
+wire \FA1|Mult2~10 ;
+wire \FA1|Mult2~11 ;
+wire \FA1|Mult2~12 ;
+wire \FA1|Mult2~13 ;
+wire \FA1|Mult2~14 ;
+wire \FA1|Mult2~15 ;
+wire \FA1|Mult2~16 ;
+wire \FA1|Mult2~17 ;
+wire \FA1|Mult2~18 ;
+wire \FA1|Mult2~19 ;
+wire \FA1|Mult2~20 ;
+wire \FA1|Mult2~21 ;
+wire \FA1|Mult2~22 ;
+wire \FA1|Mult2~23 ;
+wire \FA1|Mult2~24 ;
+wire \FA1|Mult2~25 ;
+wire \FA1|Mult2~26 ;
+wire \FA1|Mult2~27 ;
+wire \FA1|Mult2~28 ;
+wire \FA1|Mult2~29 ;
+wire \FA1|Mult2~30 ;
+wire \FA1|Mult2~31 ;
+wire \FA1|Mult2~32 ;
+wire \FA1|Mult2~33 ;
+wire \FA1|Mult2~34 ;
+wire \FA1|Mult2~35 ;
+wire \FA1|Mult2~36 ;
+wire \FA1|Mult2~37 ;
+wire \FA1|Mult2~38 ;
+wire \FA1|Mult2~39 ;
+wire \FA1|Mult2~40 ;
+wire \FA1|Mult2~41 ;
+wire \FA1|Mult2~42 ;
+wire \FA1|Mult2~43 ;
+wire \FA1|Mult2~44 ;
+wire \FA1|Mult2~45 ;
+wire \FA1|Mult2~46 ;
+wire \FA1|Mult2~47 ;
+wire \FA1|Mult2~48 ;
+wire \FA1|Mult2~49 ;
+wire \FA1|Mult2~50 ;
+wire \FA1|Mult2~51 ;
+wire \FA1|Mult2~52 ;
+wire \FA1|Mult2~53 ;
+wire \FA1|Mult2~54 ;
+wire \FA1|Mult2~55 ;
+wire \FA1|Mult2~56 ;
+wire \FA1|Mult2~57 ;
+wire \FA1|Mult2~58 ;
+wire \FA1|Mult2~59 ;
+wire \FA1|Mult2~60 ;
+wire \FA1|Mult2~61 ;
+wire \FA1|Mult2~62 ;
+wire \FA1|Mult2~63 ;
+wire \FA1|Mult2~64 ;
+wire \FA1|Mult2~65 ;
+wire \FA1|Mult2~66 ;
+wire \FA1|Mult2~67 ;
+wire \FA1|Mult2~68 ;
+wire \FA1|Mult2~69 ;
+wire \FA1|Mult2~70 ;
+wire \FA2|Mult2~8 ;
+wire \FA2|Mult2~9 ;
+wire \FA2|Mult2~10 ;
+wire \FA2|Mult2~11 ;
+wire \FA2|Mult2~12 ;
+wire \FA2|Mult2~13 ;
+wire \FA2|Mult2~14 ;
+wire \FA2|Mult2~15 ;
+wire \FA2|Mult2~16 ;
+wire \FA2|Mult2~17 ;
+wire \FA2|Mult2~18 ;
+wire \FA2|Mult2~19 ;
+wire \FA2|Mult2~20 ;
+wire \FA2|Mult2~21 ;
+wire \FA2|Mult2~22 ;
+wire \FA2|Mult2~23 ;
+wire \FA2|Mult2~24 ;
+wire \FA2|Mult2~25 ;
+wire \FA2|Mult2~26 ;
+wire \FA2|Mult2~27 ;
+wire \FA2|Mult2~28 ;
+wire \FA2|Mult2~29 ;
+wire \FA2|Mult2~30 ;
+wire \FA2|Mult2~31 ;
+wire \FA2|Mult2~32 ;
+wire \FA2|Mult2~33 ;
+wire \FA2|Mult2~34 ;
+wire \FA2|Mult2~35 ;
+wire \FA2|Mult2~36 ;
+wire \FA2|Mult2~37 ;
+wire \FA2|Mult2~38 ;
+wire \FA2|Mult2~39 ;
+wire \FA2|Mult2~40 ;
+wire \FA2|Mult2~41 ;
+wire \FA2|Mult2~42 ;
+wire \FA2|Mult2~43 ;
+wire \FA2|Mult2~44 ;
+wire \FA2|Mult2~45 ;
+wire \FA2|Mult2~46 ;
+wire \FA2|Mult2~47 ;
+wire \FA2|Mult2~48 ;
+wire \FA2|Mult2~49 ;
+wire \FA2|Mult2~50 ;
+wire \FA2|Mult2~51 ;
+wire \FA2|Mult2~52 ;
+wire \FA2|Mult2~53 ;
+wire \FA2|Mult2~54 ;
+wire \FA2|Mult2~55 ;
+wire \FA2|Mult2~56 ;
+wire \FA2|Mult2~57 ;
+wire \FA2|Mult2~58 ;
+wire \FA2|Mult2~59 ;
+wire \FA2|Mult2~60 ;
+wire \FA2|Mult2~61 ;
+wire \FA2|Mult2~62 ;
+wire \FA2|Mult2~63 ;
+wire \FA2|Mult2~64 ;
+wire \FA2|Mult2~65 ;
+wire \FA2|Mult2~66 ;
+wire \FA2|Mult2~67 ;
+wire \FA2|Mult2~68 ;
+wire \FA2|Mult2~69 ;
+wire \FA2|Mult2~70 ;
+wire \FA1|Add0~9 ;
+wire \FA1|Add0~10 ;
+wire \FA1|Add0~11 ;
+wire \FA1|Add0~12 ;
+wire \FA1|Add0~13 ;
+wire \FA1|Add0~14 ;
+wire \FA1|Add0~15 ;
+wire \FA1|Add0~16 ;
+wire \FA1|Add0~17 ;
+wire \FA1|Add0~18 ;
+wire \FA1|Add0~19 ;
+wire \FA1|Add0~20 ;
+wire \FA1|Add0~21 ;
+wire \FA1|Add0~22 ;
+wire \FA1|Add0~23 ;
+wire \FA1|Add0~24 ;
+wire \FA1|Add0~25 ;
+wire \FA1|Add0~26 ;
+wire \FA1|Add0~27 ;
+wire \FA1|Add0~28 ;
+wire \FA1|Add0~29 ;
+wire \FA1|Add0~30 ;
+wire \FA1|Add0~31 ;
+wire \FA1|Add0~32 ;
+wire \FA1|Add0~33 ;
+wire \FA1|Add0~34 ;
+wire \FA1|Add0~35 ;
+wire \FA1|Add0~36 ;
+wire \FA1|Add0~37 ;
+wire \FA1|Add0~38 ;
+wire \FA1|Add0~39 ;
+wire \FA1|Add0~40 ;
+wire \FA1|Add0~41 ;
+wire \FA1|Add0~42 ;
+wire \FA1|Add0~43 ;
+wire \FA1|Add0~44 ;
+wire \FA1|Add0~45 ;
+wire \FA1|Add0~46 ;
+wire \FA1|Add0~47 ;
+wire \FA1|Add0~48 ;
+wire \FA1|Add0~49 ;
+wire \FA1|Add0~50 ;
+wire \FA1|Add0~51 ;
+wire \FA1|Add0~52 ;
+wire \FA1|Add0~53 ;
+wire \FA1|Add0~54 ;
+wire \FA1|Add0~55 ;
+wire \FA1|Add0~56 ;
+wire \FA1|Add0~57 ;
+wire \FA1|Add0~58 ;
+wire \FA1|Add0~59 ;
+wire \FA1|Add0~60 ;
+wire \FA1|Add0~61 ;
+wire \FA1|Add0~62 ;
+wire \FA1|Add0~63 ;
+wire \FA1|Add0~64 ;
+wire \FA1|Add0~65 ;
+wire \FA1|Add0~66 ;
+wire \FA1|Add0~67 ;
+wire \FA1|Add0~68 ;
+wire \FA1|Add0~69 ;
+wire \FA1|Add0~70 ;
+wire \FA1|Add0~71 ;
+wire \FA2|Add0~9 ;
+wire \FA2|Add0~10 ;
+wire \FA2|Add0~11 ;
+wire \FA2|Add0~12 ;
+wire \FA2|Add0~13 ;
+wire \FA2|Add0~14 ;
+wire \FA2|Add0~15 ;
+wire \FA2|Add0~16 ;
+wire \FA2|Add0~17 ;
+wire \FA2|Add0~18 ;
+wire \FA2|Add0~19 ;
+wire \FA2|Add0~20 ;
+wire \FA2|Add0~21 ;
+wire \FA2|Add0~22 ;
+wire \FA2|Add0~23 ;
+wire \FA2|Add0~24 ;
+wire \FA2|Add0~25 ;
+wire \FA2|Add0~26 ;
+wire \FA2|Add0~27 ;
+wire \FA2|Add0~28 ;
+wire \FA2|Add0~29 ;
+wire \FA2|Add0~30 ;
+wire \FA2|Add0~31 ;
+wire \FA2|Add0~32 ;
+wire \FA2|Add0~33 ;
+wire \FA2|Add0~34 ;
+wire \FA2|Add0~35 ;
+wire \FA2|Add0~36 ;
+wire \FA2|Add0~37 ;
+wire \FA2|Add0~38 ;
+wire \FA2|Add0~39 ;
+wire \FA2|Add0~40 ;
+wire \FA2|Add0~41 ;
+wire \FA2|Add0~42 ;
+wire \FA2|Add0~43 ;
+wire \FA2|Add0~44 ;
+wire \FA2|Add0~45 ;
+wire \FA2|Add0~46 ;
+wire \FA2|Add0~47 ;
+wire \FA2|Add0~48 ;
+wire \FA2|Add0~49 ;
+wire \FA2|Add0~50 ;
+wire \FA2|Add0~51 ;
+wire \FA2|Add0~52 ;
+wire \FA2|Add0~53 ;
+wire \FA2|Add0~54 ;
+wire \FA2|Add0~55 ;
+wire \FA2|Add0~56 ;
+wire \FA2|Add0~57 ;
+wire \FA2|Add0~58 ;
+wire \FA2|Add0~59 ;
+wire \FA2|Add0~60 ;
+wire \FA2|Add0~61 ;
+wire \FA2|Add0~62 ;
+wire \FA2|Add0~63 ;
+wire \FA2|Add0~64 ;
+wire \FA2|Add0~65 ;
+wire \FA2|Add0~66 ;
+wire \FA2|Add0~67 ;
+wire \FA2|Add0~68 ;
+wire \FA2|Add0~69 ;
+wire \FA2|Add0~70 ;
+wire \FA2|Add0~71 ;
+wire \~QUARTUS_CREATED_GND~I_combout ;
+wire \SW[2]~input_o ;
+wire \SW[0]~input_o ;
+wire \FA1|s~0_combout ;
+wire \SW[3]~input_o ;
+wire \FA1|Add0~8_resulta ;
+wire \FA1|Add1 ;
+wire \SW[1]~input_o ;
+wire \FA2|s~combout ;
+wire \FA2|Add0~8_resulta ;
+wire \FA2|Add1 ;
+
+wire [63:0] \FA1|Mult2~mac_RESULTA_bus ;
+wire [63:0] \FA2|Mult2~mac_RESULTA_bus ;
+wire [63:0] \FA1|Add0~8_RESULTA_bus ;
+wire [63:0] \FA2|Add0~8_RESULTA_bus ;
+
+assign \FA1|Add1  = \FA1|Mult2~mac_RESULTA_bus [0];
+assign \FA1|Mult2~8  = \FA1|Mult2~mac_RESULTA_bus [1];
+assign \FA1|Mult2~9  = \FA1|Mult2~mac_RESULTA_bus [2];
+assign \FA1|Mult2~10  = \FA1|Mult2~mac_RESULTA_bus [3];
+assign \FA1|Mult2~11  = \FA1|Mult2~mac_RESULTA_bus [4];
+assign \FA1|Mult2~12  = \FA1|Mult2~mac_RESULTA_bus [5];
+assign \FA1|Mult2~13  = \FA1|Mult2~mac_RESULTA_bus [6];
+assign \FA1|Mult2~14  = \FA1|Mult2~mac_RESULTA_bus [7];
+assign \FA1|Mult2~15  = \FA1|Mult2~mac_RESULTA_bus [8];
+assign \FA1|Mult2~16  = \FA1|Mult2~mac_RESULTA_bus [9];
+assign \FA1|Mult2~17  = \FA1|Mult2~mac_RESULTA_bus [10];
+assign \FA1|Mult2~18  = \FA1|Mult2~mac_RESULTA_bus [11];
+assign \FA1|Mult2~19  = \FA1|Mult2~mac_RESULTA_bus [12];
+assign \FA1|Mult2~20  = \FA1|Mult2~mac_RESULTA_bus [13];
+assign \FA1|Mult2~21  = \FA1|Mult2~mac_RESULTA_bus [14];
+assign \FA1|Mult2~22  = \FA1|Mult2~mac_RESULTA_bus [15];
+assign \FA1|Mult2~23  = \FA1|Mult2~mac_RESULTA_bus [16];
+assign \FA1|Mult2~24  = \FA1|Mult2~mac_RESULTA_bus [17];
+assign \FA1|Mult2~25  = \FA1|Mult2~mac_RESULTA_bus [18];
+assign \FA1|Mult2~26  = \FA1|Mult2~mac_RESULTA_bus [19];
+assign \FA1|Mult2~27  = \FA1|Mult2~mac_RESULTA_bus [20];
+assign \FA1|Mult2~28  = \FA1|Mult2~mac_RESULTA_bus [21];
+assign \FA1|Mult2~29  = \FA1|Mult2~mac_RESULTA_bus [22];
+assign \FA1|Mult2~30  = \FA1|Mult2~mac_RESULTA_bus [23];
+assign \FA1|Mult2~31  = \FA1|Mult2~mac_RESULTA_bus [24];
+assign \FA1|Mult2~32  = \FA1|Mult2~mac_RESULTA_bus [25];
+assign \FA1|Mult2~33  = \FA1|Mult2~mac_RESULTA_bus [26];
+assign \FA1|Mult2~34  = \FA1|Mult2~mac_RESULTA_bus [27];
+assign \FA1|Mult2~35  = \FA1|Mult2~mac_RESULTA_bus [28];
+assign \FA1|Mult2~36  = \FA1|Mult2~mac_RESULTA_bus [29];
+assign \FA1|Mult2~37  = \FA1|Mult2~mac_RESULTA_bus [30];
+assign \FA1|Mult2~38  = \FA1|Mult2~mac_RESULTA_bus [31];
+assign \FA1|Mult2~39  = \FA1|Mult2~mac_RESULTA_bus [32];
+assign \FA1|Mult2~40  = \FA1|Mult2~mac_RESULTA_bus [33];
+assign \FA1|Mult2~41  = \FA1|Mult2~mac_RESULTA_bus [34];
+assign \FA1|Mult2~42  = \FA1|Mult2~mac_RESULTA_bus [35];
+assign \FA1|Mult2~43  = \FA1|Mult2~mac_RESULTA_bus [36];
+assign \FA1|Mult2~44  = \FA1|Mult2~mac_RESULTA_bus [37];
+assign \FA1|Mult2~45  = \FA1|Mult2~mac_RESULTA_bus [38];
+assign \FA1|Mult2~46  = \FA1|Mult2~mac_RESULTA_bus [39];
+assign \FA1|Mult2~47  = \FA1|Mult2~mac_RESULTA_bus [40];
+assign \FA1|Mult2~48  = \FA1|Mult2~mac_RESULTA_bus [41];
+assign \FA1|Mult2~49  = \FA1|Mult2~mac_RESULTA_bus [42];
+assign \FA1|Mult2~50  = \FA1|Mult2~mac_RESULTA_bus [43];
+assign \FA1|Mult2~51  = \FA1|Mult2~mac_RESULTA_bus [44];
+assign \FA1|Mult2~52  = \FA1|Mult2~mac_RESULTA_bus [45];
+assign \FA1|Mult2~53  = \FA1|Mult2~mac_RESULTA_bus [46];
+assign \FA1|Mult2~54  = \FA1|Mult2~mac_RESULTA_bus [47];
+assign \FA1|Mult2~55  = \FA1|Mult2~mac_RESULTA_bus [48];
+assign \FA1|Mult2~56  = \FA1|Mult2~mac_RESULTA_bus [49];
+assign \FA1|Mult2~57  = \FA1|Mult2~mac_RESULTA_bus [50];
+assign \FA1|Mult2~58  = \FA1|Mult2~mac_RESULTA_bus [51];
+assign \FA1|Mult2~59  = \FA1|Mult2~mac_RESULTA_bus [52];
+assign \FA1|Mult2~60  = \FA1|Mult2~mac_RESULTA_bus [53];
+assign \FA1|Mult2~61  = \FA1|Mult2~mac_RESULTA_bus [54];
+assign \FA1|Mult2~62  = \FA1|Mult2~mac_RESULTA_bus [55];
+assign \FA1|Mult2~63  = \FA1|Mult2~mac_RESULTA_bus [56];
+assign \FA1|Mult2~64  = \FA1|Mult2~mac_RESULTA_bus [57];
+assign \FA1|Mult2~65  = \FA1|Mult2~mac_RESULTA_bus [58];
+assign \FA1|Mult2~66  = \FA1|Mult2~mac_RESULTA_bus [59];
+assign \FA1|Mult2~67  = \FA1|Mult2~mac_RESULTA_bus [60];
+assign \FA1|Mult2~68  = \FA1|Mult2~mac_RESULTA_bus [61];
+assign \FA1|Mult2~69  = \FA1|Mult2~mac_RESULTA_bus [62];
+assign \FA1|Mult2~70  = \FA1|Mult2~mac_RESULTA_bus [63];
+
+assign \FA2|Add1  = \FA2|Mult2~mac_RESULTA_bus [0];
+assign \FA2|Mult2~8  = \FA2|Mult2~mac_RESULTA_bus [1];
+assign \FA2|Mult2~9  = \FA2|Mult2~mac_RESULTA_bus [2];
+assign \FA2|Mult2~10  = \FA2|Mult2~mac_RESULTA_bus [3];
+assign \FA2|Mult2~11  = \FA2|Mult2~mac_RESULTA_bus [4];
+assign \FA2|Mult2~12  = \FA2|Mult2~mac_RESULTA_bus [5];
+assign \FA2|Mult2~13  = \FA2|Mult2~mac_RESULTA_bus [6];
+assign \FA2|Mult2~14  = \FA2|Mult2~mac_RESULTA_bus [7];
+assign \FA2|Mult2~15  = \FA2|Mult2~mac_RESULTA_bus [8];
+assign \FA2|Mult2~16  = \FA2|Mult2~mac_RESULTA_bus [9];
+assign \FA2|Mult2~17  = \FA2|Mult2~mac_RESULTA_bus [10];
+assign \FA2|Mult2~18  = \FA2|Mult2~mac_RESULTA_bus [11];
+assign \FA2|Mult2~19  = \FA2|Mult2~mac_RESULTA_bus [12];
+assign \FA2|Mult2~20  = \FA2|Mult2~mac_RESULTA_bus [13];
+assign \FA2|Mult2~21  = \FA2|Mult2~mac_RESULTA_bus [14];
+assign \FA2|Mult2~22  = \FA2|Mult2~mac_RESULTA_bus [15];
+assign \FA2|Mult2~23  = \FA2|Mult2~mac_RESULTA_bus [16];
+assign \FA2|Mult2~24  = \FA2|Mult2~mac_RESULTA_bus [17];
+assign \FA2|Mult2~25  = \FA2|Mult2~mac_RESULTA_bus [18];
+assign \FA2|Mult2~26  = \FA2|Mult2~mac_RESULTA_bus [19];
+assign \FA2|Mult2~27  = \FA2|Mult2~mac_RESULTA_bus [20];
+assign \FA2|Mult2~28  = \FA2|Mult2~mac_RESULTA_bus [21];
+assign \FA2|Mult2~29  = \FA2|Mult2~mac_RESULTA_bus [22];
+assign \FA2|Mult2~30  = \FA2|Mult2~mac_RESULTA_bus [23];
+assign \FA2|Mult2~31  = \FA2|Mult2~mac_RESULTA_bus [24];
+assign \FA2|Mult2~32  = \FA2|Mult2~mac_RESULTA_bus [25];
+assign \FA2|Mult2~33  = \FA2|Mult2~mac_RESULTA_bus [26];
+assign \FA2|Mult2~34  = \FA2|Mult2~mac_RESULTA_bus [27];
+assign \FA2|Mult2~35  = \FA2|Mult2~mac_RESULTA_bus [28];
+assign \FA2|Mult2~36  = \FA2|Mult2~mac_RESULTA_bus [29];
+assign \FA2|Mult2~37  = \FA2|Mult2~mac_RESULTA_bus [30];
+assign \FA2|Mult2~38  = \FA2|Mult2~mac_RESULTA_bus [31];
+assign \FA2|Mult2~39  = \FA2|Mult2~mac_RESULTA_bus [32];
+assign \FA2|Mult2~40  = \FA2|Mult2~mac_RESULTA_bus [33];
+assign \FA2|Mult2~41  = \FA2|Mult2~mac_RESULTA_bus [34];
+assign \FA2|Mult2~42  = \FA2|Mult2~mac_RESULTA_bus [35];
+assign \FA2|Mult2~43  = \FA2|Mult2~mac_RESULTA_bus [36];
+assign \FA2|Mult2~44  = \FA2|Mult2~mac_RESULTA_bus [37];
+assign \FA2|Mult2~45  = \FA2|Mult2~mac_RESULTA_bus [38];
+assign \FA2|Mult2~46  = \FA2|Mult2~mac_RESULTA_bus [39];
+assign \FA2|Mult2~47  = \FA2|Mult2~mac_RESULTA_bus [40];
+assign \FA2|Mult2~48  = \FA2|Mult2~mac_RESULTA_bus [41];
+assign \FA2|Mult2~49  = \FA2|Mult2~mac_RESULTA_bus [42];
+assign \FA2|Mult2~50  = \FA2|Mult2~mac_RESULTA_bus [43];
+assign \FA2|Mult2~51  = \FA2|Mult2~mac_RESULTA_bus [44];
+assign \FA2|Mult2~52  = \FA2|Mult2~mac_RESULTA_bus [45];
+assign \FA2|Mult2~53  = \FA2|Mult2~mac_RESULTA_bus [46];
+assign \FA2|Mult2~54  = \FA2|Mult2~mac_RESULTA_bus [47];
+assign \FA2|Mult2~55  = \FA2|Mult2~mac_RESULTA_bus [48];
+assign \FA2|Mult2~56  = \FA2|Mult2~mac_RESULTA_bus [49];
+assign \FA2|Mult2~57  = \FA2|Mult2~mac_RESULTA_bus [50];
+assign \FA2|Mult2~58  = \FA2|Mult2~mac_RESULTA_bus [51];
+assign \FA2|Mult2~59  = \FA2|Mult2~mac_RESULTA_bus [52];
+assign \FA2|Mult2~60  = \FA2|Mult2~mac_RESULTA_bus [53];
+assign \FA2|Mult2~61  = \FA2|Mult2~mac_RESULTA_bus [54];
+assign \FA2|Mult2~62  = \FA2|Mult2~mac_RESULTA_bus [55];
+assign \FA2|Mult2~63  = \FA2|Mult2~mac_RESULTA_bus [56];
+assign \FA2|Mult2~64  = \FA2|Mult2~mac_RESULTA_bus [57];
+assign \FA2|Mult2~65  = \FA2|Mult2~mac_RESULTA_bus [58];
+assign \FA2|Mult2~66  = \FA2|Mult2~mac_RESULTA_bus [59];
+assign \FA2|Mult2~67  = \FA2|Mult2~mac_RESULTA_bus [60];
+assign \FA2|Mult2~68  = \FA2|Mult2~mac_RESULTA_bus [61];
+assign \FA2|Mult2~69  = \FA2|Mult2~mac_RESULTA_bus [62];
+assign \FA2|Mult2~70  = \FA2|Mult2~mac_RESULTA_bus [63];
+
+assign \FA1|Add0~8_resulta  = \FA1|Add0~8_RESULTA_bus [0];
+assign \FA1|Add0~9  = \FA1|Add0~8_RESULTA_bus [1];
+assign \FA1|Add0~10  = \FA1|Add0~8_RESULTA_bus [2];
+assign \FA1|Add0~11  = \FA1|Add0~8_RESULTA_bus [3];
+assign \FA1|Add0~12  = \FA1|Add0~8_RESULTA_bus [4];
+assign \FA1|Add0~13  = \FA1|Add0~8_RESULTA_bus [5];
+assign \FA1|Add0~14  = \FA1|Add0~8_RESULTA_bus [6];
+assign \FA1|Add0~15  = \FA1|Add0~8_RESULTA_bus [7];
+assign \FA1|Add0~16  = \FA1|Add0~8_RESULTA_bus [8];
+assign \FA1|Add0~17  = \FA1|Add0~8_RESULTA_bus [9];
+assign \FA1|Add0~18  = \FA1|Add0~8_RESULTA_bus [10];
+assign \FA1|Add0~19  = \FA1|Add0~8_RESULTA_bus [11];
+assign \FA1|Add0~20  = \FA1|Add0~8_RESULTA_bus [12];
+assign \FA1|Add0~21  = \FA1|Add0~8_RESULTA_bus [13];
+assign \FA1|Add0~22  = \FA1|Add0~8_RESULTA_bus [14];
+assign \FA1|Add0~23  = \FA1|Add0~8_RESULTA_bus [15];
+assign \FA1|Add0~24  = \FA1|Add0~8_RESULTA_bus [16];
+assign \FA1|Add0~25  = \FA1|Add0~8_RESULTA_bus [17];
+assign \FA1|Add0~26  = \FA1|Add0~8_RESULTA_bus [18];
+assign \FA1|Add0~27  = \FA1|Add0~8_RESULTA_bus [19];
+assign \FA1|Add0~28  = \FA1|Add0~8_RESULTA_bus [20];
+assign \FA1|Add0~29  = \FA1|Add0~8_RESULTA_bus [21];
+assign \FA1|Add0~30  = \FA1|Add0~8_RESULTA_bus [22];
+assign \FA1|Add0~31  = \FA1|Add0~8_RESULTA_bus [23];
+assign \FA1|Add0~32  = \FA1|Add0~8_RESULTA_bus [24];
+assign \FA1|Add0~33  = \FA1|Add0~8_RESULTA_bus [25];
+assign \FA1|Add0~34  = \FA1|Add0~8_RESULTA_bus [26];
+assign \FA1|Add0~35  = \FA1|Add0~8_RESULTA_bus [27];
+assign \FA1|Add0~36  = \FA1|Add0~8_RESULTA_bus [28];
+assign \FA1|Add0~37  = \FA1|Add0~8_RESULTA_bus [29];
+assign \FA1|Add0~38  = \FA1|Add0~8_RESULTA_bus [30];
+assign \FA1|Add0~39  = \FA1|Add0~8_RESULTA_bus [31];
+assign \FA1|Add0~40  = \FA1|Add0~8_RESULTA_bus [32];
+assign \FA1|Add0~41  = \FA1|Add0~8_RESULTA_bus [33];
+assign \FA1|Add0~42  = \FA1|Add0~8_RESULTA_bus [34];
+assign \FA1|Add0~43  = \FA1|Add0~8_RESULTA_bus [35];
+assign \FA1|Add0~44  = \FA1|Add0~8_RESULTA_bus [36];
+assign \FA1|Add0~45  = \FA1|Add0~8_RESULTA_bus [37];
+assign \FA1|Add0~46  = \FA1|Add0~8_RESULTA_bus [38];
+assign \FA1|Add0~47  = \FA1|Add0~8_RESULTA_bus [39];
+assign \FA1|Add0~48  = \FA1|Add0~8_RESULTA_bus [40];
+assign \FA1|Add0~49  = \FA1|Add0~8_RESULTA_bus [41];
+assign \FA1|Add0~50  = \FA1|Add0~8_RESULTA_bus [42];
+assign \FA1|Add0~51  = \FA1|Add0~8_RESULTA_bus [43];
+assign \FA1|Add0~52  = \FA1|Add0~8_RESULTA_bus [44];
+assign \FA1|Add0~53  = \FA1|Add0~8_RESULTA_bus [45];
+assign \FA1|Add0~54  = \FA1|Add0~8_RESULTA_bus [46];
+assign \FA1|Add0~55  = \FA1|Add0~8_RESULTA_bus [47];
+assign \FA1|Add0~56  = \FA1|Add0~8_RESULTA_bus [48];
+assign \FA1|Add0~57  = \FA1|Add0~8_RESULTA_bus [49];
+assign \FA1|Add0~58  = \FA1|Add0~8_RESULTA_bus [50];
+assign \FA1|Add0~59  = \FA1|Add0~8_RESULTA_bus [51];
+assign \FA1|Add0~60  = \FA1|Add0~8_RESULTA_bus [52];
+assign \FA1|Add0~61  = \FA1|Add0~8_RESULTA_bus [53];
+assign \FA1|Add0~62  = \FA1|Add0~8_RESULTA_bus [54];
+assign \FA1|Add0~63  = \FA1|Add0~8_RESULTA_bus [55];
+assign \FA1|Add0~64  = \FA1|Add0~8_RESULTA_bus [56];
+assign \FA1|Add0~65  = \FA1|Add0~8_RESULTA_bus [57];
+assign \FA1|Add0~66  = \FA1|Add0~8_RESULTA_bus [58];
+assign \FA1|Add0~67  = \FA1|Add0~8_RESULTA_bus [59];
+assign \FA1|Add0~68  = \FA1|Add0~8_RESULTA_bus [60];
+assign \FA1|Add0~69  = \FA1|Add0~8_RESULTA_bus [61];
+assign \FA1|Add0~70  = \FA1|Add0~8_RESULTA_bus [62];
+assign \FA1|Add0~71  = \FA1|Add0~8_RESULTA_bus [63];
+
+assign \FA2|Add0~8_resulta  = \FA2|Add0~8_RESULTA_bus [0];
+assign \FA2|Add0~9  = \FA2|Add0~8_RESULTA_bus [1];
+assign \FA2|Add0~10  = \FA2|Add0~8_RESULTA_bus [2];
+assign \FA2|Add0~11  = \FA2|Add0~8_RESULTA_bus [3];
+assign \FA2|Add0~12  = \FA2|Add0~8_RESULTA_bus [4];
+assign \FA2|Add0~13  = \FA2|Add0~8_RESULTA_bus [5];
+assign \FA2|Add0~14  = \FA2|Add0~8_RESULTA_bus [6];
+assign \FA2|Add0~15  = \FA2|Add0~8_RESULTA_bus [7];
+assign \FA2|Add0~16  = \FA2|Add0~8_RESULTA_bus [8];
+assign \FA2|Add0~17  = \FA2|Add0~8_RESULTA_bus [9];
+assign \FA2|Add0~18  = \FA2|Add0~8_RESULTA_bus [10];
+assign \FA2|Add0~19  = \FA2|Add0~8_RESULTA_bus [11];
+assign \FA2|Add0~20  = \FA2|Add0~8_RESULTA_bus [12];
+assign \FA2|Add0~21  = \FA2|Add0~8_RESULTA_bus [13];
+assign \FA2|Add0~22  = \FA2|Add0~8_RESULTA_bus [14];
+assign \FA2|Add0~23  = \FA2|Add0~8_RESULTA_bus [15];
+assign \FA2|Add0~24  = \FA2|Add0~8_RESULTA_bus [16];
+assign \FA2|Add0~25  = \FA2|Add0~8_RESULTA_bus [17];
+assign \FA2|Add0~26  = \FA2|Add0~8_RESULTA_bus [18];
+assign \FA2|Add0~27  = \FA2|Add0~8_RESULTA_bus [19];
+assign \FA2|Add0~28  = \FA2|Add0~8_RESULTA_bus [20];
+assign \FA2|Add0~29  = \FA2|Add0~8_RESULTA_bus [21];
+assign \FA2|Add0~30  = \FA2|Add0~8_RESULTA_bus [22];
+assign \FA2|Add0~31  = \FA2|Add0~8_RESULTA_bus [23];
+assign \FA2|Add0~32  = \FA2|Add0~8_RESULTA_bus [24];
+assign \FA2|Add0~33  = \FA2|Add0~8_RESULTA_bus [25];
+assign \FA2|Add0~34  = \FA2|Add0~8_RESULTA_bus [26];
+assign \FA2|Add0~35  = \FA2|Add0~8_RESULTA_bus [27];
+assign \FA2|Add0~36  = \FA2|Add0~8_RESULTA_bus [28];
+assign \FA2|Add0~37  = \FA2|Add0~8_RESULTA_bus [29];
+assign \FA2|Add0~38  = \FA2|Add0~8_RESULTA_bus [30];
+assign \FA2|Add0~39  = \FA2|Add0~8_RESULTA_bus [31];
+assign \FA2|Add0~40  = \FA2|Add0~8_RESULTA_bus [32];
+assign \FA2|Add0~41  = \FA2|Add0~8_RESULTA_bus [33];
+assign \FA2|Add0~42  = \FA2|Add0~8_RESULTA_bus [34];
+assign \FA2|Add0~43  = \FA2|Add0~8_RESULTA_bus [35];
+assign \FA2|Add0~44  = \FA2|Add0~8_RESULTA_bus [36];
+assign \FA2|Add0~45  = \FA2|Add0~8_RESULTA_bus [37];
+assign \FA2|Add0~46  = \FA2|Add0~8_RESULTA_bus [38];
+assign \FA2|Add0~47  = \FA2|Add0~8_RESULTA_bus [39];
+assign \FA2|Add0~48  = \FA2|Add0~8_RESULTA_bus [40];
+assign \FA2|Add0~49  = \FA2|Add0~8_RESULTA_bus [41];
+assign \FA2|Add0~50  = \FA2|Add0~8_RESULTA_bus [42];
+assign \FA2|Add0~51  = \FA2|Add0~8_RESULTA_bus [43];
+assign \FA2|Add0~52  = \FA2|Add0~8_RESULTA_bus [44];
+assign \FA2|Add0~53  = \FA2|Add0~8_RESULTA_bus [45];
+assign \FA2|Add0~54  = \FA2|Add0~8_RESULTA_bus [46];
+assign \FA2|Add0~55  = \FA2|Add0~8_RESULTA_bus [47];
+assign \FA2|Add0~56  = \FA2|Add0~8_RESULTA_bus [48];
+assign \FA2|Add0~57  = \FA2|Add0~8_RESULTA_bus [49];
+assign \FA2|Add0~58  = \FA2|Add0~8_RESULTA_bus [50];
+assign \FA2|Add0~59  = \FA2|Add0~8_RESULTA_bus [51];
+assign \FA2|Add0~60  = \FA2|Add0~8_RESULTA_bus [52];
+assign \FA2|Add0~61  = \FA2|Add0~8_RESULTA_bus [53];
+assign \FA2|Add0~62  = \FA2|Add0~8_RESULTA_bus [54];
+assign \FA2|Add0~63  = \FA2|Add0~8_RESULTA_bus [55];
+assign \FA2|Add0~64  = \FA2|Add0~8_RESULTA_bus [56];
+assign \FA2|Add0~65  = \FA2|Add0~8_RESULTA_bus [57];
+assign \FA2|Add0~66  = \FA2|Add0~8_RESULTA_bus [58];
+assign \FA2|Add0~67  = \FA2|Add0~8_RESULTA_bus [59];
+assign \FA2|Add0~68  = \FA2|Add0~8_RESULTA_bus [60];
+assign \FA2|Add0~69  = \FA2|Add0~8_RESULTA_bus [61];
+assign \FA2|Add0~70  = \FA2|Add0~8_RESULTA_bus [62];
+assign \FA2|Add0~71  = \FA2|Add0~8_RESULTA_bus [63];
+
+// Location: IOOBUF_X89_Y8_N22
+cyclonev_io_obuf \LED[0]~output (
+	.i(\FA1|s~0_combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(LED[0]),
+	.obar());
+// synopsys translate_off
+defparam \LED[0]~output .bus_hold = "false";
+defparam \LED[0]~output .open_drain_output = "false";
+defparam \LED[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X89_Y9_N39
+cyclonev_io_obuf \LED[1]~output (
+	.i(\FA2|s~combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(LED[1]),
+	.obar());
+// synopsys translate_off
+defparam \LED[1]~output .bus_hold = "false";
+defparam \LED[1]~output .open_drain_output = "false";
+defparam \LED[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X89_Y9_N5
+cyclonev_io_obuf \LED[2]~output (
+	.i(\FA2|Add1 ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(LED[2]),
+	.obar());
+// synopsys translate_off
+defparam \LED[2]~output .bus_hold = "false";
+defparam \LED[2]~output .open_drain_output = "false";
+defparam \LED[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X89_Y9_N22
+cyclonev_io_obuf \LED[3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(LED[3]),
+	.obar());
+// synopsys translate_off
+defparam \LED[3]~output .bus_hold = "false";
+defparam \LED[3]~output .open_drain_output = "false";
+defparam \LED[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y23_N4
+cyclonev_io_ibuf \SW[2]~input (
+	.i(SW[2]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW[2]~input_o ));
+// synopsys translate_off
+defparam \SW[2]~input .bus_hold = "false";
+defparam \SW[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y25_N4
+cyclonev_io_ibuf \SW[0]~input (
+	.i(SW[0]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW[0]~input_o ));
+// synopsys translate_off
+defparam \SW[0]~input .bus_hold = "false";
+defparam \SW[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LABCELL_X88_Y24_N3
+cyclonev_lcell_comb \FA1|s~0 (
+// Equation(s):
+// \FA1|s~0_combout  = ( \SW[0]~input_o  & ( !\SW[2]~input_o  ) ) # ( !\SW[0]~input_o  & ( \SW[2]~input_o  ) )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(!\SW[2]~input_o ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(!\SW[0]~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\FA1|s~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \FA1|s~0 .extended_lut = "off";
+defparam \FA1|s~0 .lut_mask = 64'h0F0F0F0FF0F0F0F0;
+defparam \FA1|s~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y23_N21
+cyclonev_io_ibuf \SW[3]~input (
+	.i(SW[3]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW[3]~input_o ));
+// synopsys translate_off
+defparam \SW[3]~input .bus_hold = "false";
+defparam \SW[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: DSP_X86_Y26_N0
+cyclonev_mac \FA1|Add0~8 (
+	.sub(gnd),
+	.negate(gnd),
+	.accumulate(gnd),
+	.loadconst(gnd),
+	.ax({gnd}),
+	.ay({\SW[2]~input_o }),
+	.az(26'b00000000000000000000000000),
+	.bx({\SW[2]~input_o }),
+	.by({\SW[0]~input_o }),
+	.bz(18'b000000000000000000),
+	.coefsela(3'b000),
+	.coefselb(3'b000),
+	.clk(3'b000),
+	.aclr(2'b00),
+	.ena(3'b111),
+	.scanin(27'b000000000000000000000000000),
+	.chainin(1'b0),
+	.dftout(),
+	.resulta(\FA1|Add0~8_RESULTA_bus ),
+	.resultb(),
+	.scanout(),
+	.chainout());
+// synopsys translate_off
+defparam \FA1|Add0~8 .accumulate_clock = "none";
+defparam \FA1|Add0~8 .ax_clock = "none";
+defparam \FA1|Add0~8 .ax_width = 1;
+defparam \FA1|Add0~8 .ay_scan_in_clock = "none";
+defparam \FA1|Add0~8 .ay_scan_in_width = 1;
+defparam \FA1|Add0~8 .ay_use_scan_in = "false";
+defparam \FA1|Add0~8 .az_clock = "none";
+defparam \FA1|Add0~8 .bx_clock = "none";
+defparam \FA1|Add0~8 .bx_width = 1;
+defparam \FA1|Add0~8 .by_clock = "none";
+defparam \FA1|Add0~8 .by_use_scan_in = "false";
+defparam \FA1|Add0~8 .by_width = 1;
+defparam \FA1|Add0~8 .bz_clock = "none";
+defparam \FA1|Add0~8 .coef_a_0 = 0;
+defparam \FA1|Add0~8 .coef_a_1 = 0;
+defparam \FA1|Add0~8 .coef_a_2 = 0;
+defparam \FA1|Add0~8 .coef_a_3 = 0;
+defparam \FA1|Add0~8 .coef_a_4 = 0;
+defparam \FA1|Add0~8 .coef_a_5 = 0;
+defparam \FA1|Add0~8 .coef_a_6 = 0;
+defparam \FA1|Add0~8 .coef_a_7 = 0;
+defparam \FA1|Add0~8 .coef_b_0 = 0;
+defparam \FA1|Add0~8 .coef_b_1 = 0;
+defparam \FA1|Add0~8 .coef_b_2 = 0;
+defparam \FA1|Add0~8 .coef_b_3 = 0;
+defparam \FA1|Add0~8 .coef_b_4 = 0;
+defparam \FA1|Add0~8 .coef_b_5 = 0;
+defparam \FA1|Add0~8 .coef_b_6 = 0;
+defparam \FA1|Add0~8 .coef_b_7 = 0;
+defparam \FA1|Add0~8 .coef_sel_a_clock = "none";
+defparam \FA1|Add0~8 .coef_sel_b_clock = "none";
+defparam \FA1|Add0~8 .delay_scan_out_ay = "false";
+defparam \FA1|Add0~8 .delay_scan_out_by = "false";
+defparam \FA1|Add0~8 .enable_double_accum = "false";
+defparam \FA1|Add0~8 .load_const_clock = "none";
+defparam \FA1|Add0~8 .load_const_value = 0;
+defparam \FA1|Add0~8 .mode_sub_location = 0;
+defparam \FA1|Add0~8 .negate_clock = "none";
+defparam \FA1|Add0~8 .operand_source_max = "input";
+defparam \FA1|Add0~8 .operand_source_may = "input";
+defparam \FA1|Add0~8 .operand_source_mbx = "input";
+defparam \FA1|Add0~8 .operand_source_mby = "input";
+defparam \FA1|Add0~8 .operation_mode = "m18x18_sumof2";
+defparam \FA1|Add0~8 .output_clock = "none";
+defparam \FA1|Add0~8 .preadder_subtract_a = "false";
+defparam \FA1|Add0~8 .preadder_subtract_b = "false";
+defparam \FA1|Add0~8 .result_a_width = 64;
+defparam \FA1|Add0~8 .signed_max = "false";
+defparam \FA1|Add0~8 .signed_may = "false";
+defparam \FA1|Add0~8 .signed_mbx = "false";
+defparam \FA1|Add0~8 .signed_mby = "false";
+defparam \FA1|Add0~8 .sub_clock = "none";
+defparam \FA1|Add0~8 .use_chainadder = "false";
+// synopsys translate_on
+
+// Location: DSP_X86_Y24_N0
+cyclonev_mac \FA1|Mult2~mac (
+	.sub(gnd),
+	.negate(gnd),
+	.accumulate(gnd),
+	.loadconst(gnd),
+	.ax({gnd}),
+	.ay({\SW[0]~input_o }),
+	.az(26'b00000000000000000000000000),
+	.bx({\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,
+\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta }),
+	.by({\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,
+\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta ,\FA1|Add0~8_resulta }),
+	.bz(18'b000000000000000000),
+	.coefsela(3'b000),
+	.coefselb(3'b000),
+	.clk(3'b000),
+	.aclr(2'b00),
+	.ena(3'b111),
+	.scanin(27'b000000000000000000000000000),
+	.chainin(1'b0),
+	.dftout(),
+	.resulta(\FA1|Mult2~mac_RESULTA_bus ),
+	.resultb(),
+	.scanout(),
+	.chainout());
+// synopsys translate_off
+defparam \FA1|Mult2~mac .accumulate_clock = "none";
+defparam \FA1|Mult2~mac .ax_clock = "none";
+defparam \FA1|Mult2~mac .ax_width = 1;
+defparam \FA1|Mult2~mac .ay_scan_in_clock = "none";
+defparam \FA1|Mult2~mac .ay_scan_in_width = 1;
+defparam \FA1|Mult2~mac .ay_use_scan_in = "false";
+defparam \FA1|Mult2~mac .az_clock = "none";
+defparam \FA1|Mult2~mac .bx_clock = "none";
+defparam \FA1|Mult2~mac .bx_width = 18;
+defparam \FA1|Mult2~mac .by_clock = "none";
+defparam \FA1|Mult2~mac .by_use_scan_in = "false";
+defparam \FA1|Mult2~mac .by_width = 18;
+defparam \FA1|Mult2~mac .bz_clock = "none";
+defparam \FA1|Mult2~mac .coef_a_0 = 0;
+defparam \FA1|Mult2~mac .coef_a_1 = 0;
+defparam \FA1|Mult2~mac .coef_a_2 = 0;
+defparam \FA1|Mult2~mac .coef_a_3 = 0;
+defparam \FA1|Mult2~mac .coef_a_4 = 0;
+defparam \FA1|Mult2~mac .coef_a_5 = 0;
+defparam \FA1|Mult2~mac .coef_a_6 = 0;
+defparam \FA1|Mult2~mac .coef_a_7 = 0;
+defparam \FA1|Mult2~mac .coef_b_0 = 0;
+defparam \FA1|Mult2~mac .coef_b_1 = 0;
+defparam \FA1|Mult2~mac .coef_b_2 = 0;
+defparam \FA1|Mult2~mac .coef_b_3 = 0;
+defparam \FA1|Mult2~mac .coef_b_4 = 0;
+defparam \FA1|Mult2~mac .coef_b_5 = 0;
+defparam \FA1|Mult2~mac .coef_b_6 = 0;
+defparam \FA1|Mult2~mac .coef_b_7 = 0;
+defparam \FA1|Mult2~mac .coef_sel_a_clock = "none";
+defparam \FA1|Mult2~mac .coef_sel_b_clock = "none";
+defparam \FA1|Mult2~mac .delay_scan_out_ay = "false";
+defparam \FA1|Mult2~mac .delay_scan_out_by = "false";
+defparam \FA1|Mult2~mac .enable_double_accum = "false";
+defparam \FA1|Mult2~mac .load_const_clock = "none";
+defparam \FA1|Mult2~mac .load_const_value = 0;
+defparam \FA1|Mult2~mac .mode_sub_location = 0;
+defparam \FA1|Mult2~mac .negate_clock = "none";
+defparam \FA1|Mult2~mac .operand_source_max = "input";
+defparam \FA1|Mult2~mac .operand_source_may = "input";
+defparam \FA1|Mult2~mac .operand_source_mbx = "input";
+defparam \FA1|Mult2~mac .operand_source_mby = "input";
+defparam \FA1|Mult2~mac .operation_mode = "m18x18_plus36";
+defparam \FA1|Mult2~mac .output_clock = "none";
+defparam \FA1|Mult2~mac .preadder_subtract_a = "false";
+defparam \FA1|Mult2~mac .preadder_subtract_b = "false";
+defparam \FA1|Mult2~mac .result_a_width = 64;
+defparam \FA1|Mult2~mac .signed_max = "false";
+defparam \FA1|Mult2~mac .signed_may = "false";
+defparam \FA1|Mult2~mac .signed_mbx = "true";
+defparam \FA1|Mult2~mac .signed_mby = "false";
+defparam \FA1|Mult2~mac .sub_clock = "none";
+defparam \FA1|Mult2~mac .use_chainadder = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y25_N21
+cyclonev_io_ibuf \SW[1]~input (
+	.i(SW[1]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\SW[1]~input_o ));
+// synopsys translate_off
+defparam \SW[1]~input .bus_hold = "false";
+defparam \SW[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: MLABCELL_X87_Y21_N30
+cyclonev_lcell_comb \FA2|s (
+// Equation(s):
+// \FA2|s~combout  = ( \FA1|Add1  & ( \SW[1]~input_o  & ( \SW[3]~input_o  ) ) ) # ( !\FA1|Add1  & ( \SW[1]~input_o  & ( !\SW[3]~input_o  ) ) ) # ( \FA1|Add1  & ( !\SW[1]~input_o  & ( !\SW[3]~input_o  ) ) ) # ( !\FA1|Add1  & ( !\SW[1]~input_o  & ( 
+// \SW[3]~input_o  ) ) )
+
+	.dataa(gnd),
+	.datab(!\SW[3]~input_o ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(!\FA1|Add1 ),
+	.dataf(!\SW[1]~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\FA2|s~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \FA2|s .extended_lut = "off";
+defparam \FA2|s .lut_mask = 64'h3333CCCCCCCC3333;
+defparam \FA2|s .shared_arith = "off";
+// synopsys translate_on
+
+// Location: DSP_X86_Y22_N0
+cyclonev_mac \FA2|Add0~8 (
+	.sub(gnd),
+	.negate(gnd),
+	.accumulate(gnd),
+	.loadconst(gnd),
+	.ax({\FA1|Add1 }),
+	.ay({\SW[3]~input_o }),
+	.az(26'b00000000000000000000000000),
+	.bx({\SW[3]~input_o }),
+	.by({\SW[1]~input_o }),
+	.bz(18'b000000000000000000),
+	.coefsela(3'b000),
+	.coefselb(3'b000),
+	.clk(3'b000),
+	.aclr(2'b00),
+	.ena(3'b111),
+	.scanin(27'b000000000000000000000000000),
+	.chainin(1'b0),
+	.dftout(),
+	.resulta(\FA2|Add0~8_RESULTA_bus ),
+	.resultb(),
+	.scanout(),
+	.chainout());
+// synopsys translate_off
+defparam \FA2|Add0~8 .accumulate_clock = "none";
+defparam \FA2|Add0~8 .ax_clock = "none";
+defparam \FA2|Add0~8 .ax_width = 1;
+defparam \FA2|Add0~8 .ay_scan_in_clock = "none";
+defparam \FA2|Add0~8 .ay_scan_in_width = 1;
+defparam \FA2|Add0~8 .ay_use_scan_in = "false";
+defparam \FA2|Add0~8 .az_clock = "none";
+defparam \FA2|Add0~8 .bx_clock = "none";
+defparam \FA2|Add0~8 .bx_width = 1;
+defparam \FA2|Add0~8 .by_clock = "none";
+defparam \FA2|Add0~8 .by_use_scan_in = "false";
+defparam \FA2|Add0~8 .by_width = 1;
+defparam \FA2|Add0~8 .bz_clock = "none";
+defparam \FA2|Add0~8 .coef_a_0 = 0;
+defparam \FA2|Add0~8 .coef_a_1 = 0;
+defparam \FA2|Add0~8 .coef_a_2 = 0;
+defparam \FA2|Add0~8 .coef_a_3 = 0;
+defparam \FA2|Add0~8 .coef_a_4 = 0;
+defparam \FA2|Add0~8 .coef_a_5 = 0;
+defparam \FA2|Add0~8 .coef_a_6 = 0;
+defparam \FA2|Add0~8 .coef_a_7 = 0;
+defparam \FA2|Add0~8 .coef_b_0 = 0;
+defparam \FA2|Add0~8 .coef_b_1 = 0;
+defparam \FA2|Add0~8 .coef_b_2 = 0;
+defparam \FA2|Add0~8 .coef_b_3 = 0;
+defparam \FA2|Add0~8 .coef_b_4 = 0;
+defparam \FA2|Add0~8 .coef_b_5 = 0;
+defparam \FA2|Add0~8 .coef_b_6 = 0;
+defparam \FA2|Add0~8 .coef_b_7 = 0;
+defparam \FA2|Add0~8 .coef_sel_a_clock = "none";
+defparam \FA2|Add0~8 .coef_sel_b_clock = "none";
+defparam \FA2|Add0~8 .delay_scan_out_ay = "false";
+defparam \FA2|Add0~8 .delay_scan_out_by = "false";
+defparam \FA2|Add0~8 .enable_double_accum = "false";
+defparam \FA2|Add0~8 .load_const_clock = "none";
+defparam \FA2|Add0~8 .load_const_value = 0;
+defparam \FA2|Add0~8 .mode_sub_location = 0;
+defparam \FA2|Add0~8 .negate_clock = "none";
+defparam \FA2|Add0~8 .operand_source_max = "input";
+defparam \FA2|Add0~8 .operand_source_may = "input";
+defparam \FA2|Add0~8 .operand_source_mbx = "input";
+defparam \FA2|Add0~8 .operand_source_mby = "input";
+defparam \FA2|Add0~8 .operation_mode = "m18x18_sumof2";
+defparam \FA2|Add0~8 .output_clock = "none";
+defparam \FA2|Add0~8 .preadder_subtract_a = "false";
+defparam \FA2|Add0~8 .preadder_subtract_b = "false";
+defparam \FA2|Add0~8 .result_a_width = 64;
+defparam \FA2|Add0~8 .signed_max = "false";
+defparam \FA2|Add0~8 .signed_may = "false";
+defparam \FA2|Add0~8 .signed_mbx = "false";
+defparam \FA2|Add0~8 .signed_mby = "false";
+defparam \FA2|Add0~8 .sub_clock = "none";
+defparam \FA2|Add0~8 .use_chainadder = "false";
+// synopsys translate_on
+
+// Location: DSP_X86_Y20_N0
+cyclonev_mac \FA2|Mult2~mac (
+	.sub(gnd),
+	.negate(gnd),
+	.accumulate(gnd),
+	.loadconst(gnd),
+	.ax({\FA1|Add1 }),
+	.ay({\SW[1]~input_o }),
+	.az(26'b00000000000000000000000000),
+	.bx({\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,
+\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta }),
+	.by({\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,
+\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta ,\FA2|Add0~8_resulta }),
+	.bz(18'b000000000000000000),
+	.coefsela(3'b000),
+	.coefselb(3'b000),
+	.clk(3'b000),
+	.aclr(2'b00),
+	.ena(3'b111),
+	.scanin(27'b000000000000000000000000000),
+	.chainin(1'b0),
+	.dftout(),
+	.resulta(\FA2|Mult2~mac_RESULTA_bus ),
+	.resultb(),
+	.scanout(),
+	.chainout());
+// synopsys translate_off
+defparam \FA2|Mult2~mac .accumulate_clock = "none";
+defparam \FA2|Mult2~mac .ax_clock = "none";
+defparam \FA2|Mult2~mac .ax_width = 1;
+defparam \FA2|Mult2~mac .ay_scan_in_clock = "none";
+defparam \FA2|Mult2~mac .ay_scan_in_width = 1;
+defparam \FA2|Mult2~mac .ay_use_scan_in = "false";
+defparam \FA2|Mult2~mac .az_clock = "none";
+defparam \FA2|Mult2~mac .bx_clock = "none";
+defparam \FA2|Mult2~mac .bx_width = 18;
+defparam \FA2|Mult2~mac .by_clock = "none";
+defparam \FA2|Mult2~mac .by_use_scan_in = "false";
+defparam \FA2|Mult2~mac .by_width = 18;
+defparam \FA2|Mult2~mac .bz_clock = "none";
+defparam \FA2|Mult2~mac .coef_a_0 = 0;
+defparam \FA2|Mult2~mac .coef_a_1 = 0;
+defparam \FA2|Mult2~mac .coef_a_2 = 0;
+defparam \FA2|Mult2~mac .coef_a_3 = 0;
+defparam \FA2|Mult2~mac .coef_a_4 = 0;
+defparam \FA2|Mult2~mac .coef_a_5 = 0;
+defparam \FA2|Mult2~mac .coef_a_6 = 0;
+defparam \FA2|Mult2~mac .coef_a_7 = 0;
+defparam \FA2|Mult2~mac .coef_b_0 = 0;
+defparam \FA2|Mult2~mac .coef_b_1 = 0;
+defparam \FA2|Mult2~mac .coef_b_2 = 0;
+defparam \FA2|Mult2~mac .coef_b_3 = 0;
+defparam \FA2|Mult2~mac .coef_b_4 = 0;
+defparam \FA2|Mult2~mac .coef_b_5 = 0;
+defparam \FA2|Mult2~mac .coef_b_6 = 0;
+defparam \FA2|Mult2~mac .coef_b_7 = 0;
+defparam \FA2|Mult2~mac .coef_sel_a_clock = "none";
+defparam \FA2|Mult2~mac .coef_sel_b_clock = "none";
+defparam \FA2|Mult2~mac .delay_scan_out_ay = "false";
+defparam \FA2|Mult2~mac .delay_scan_out_by = "false";
+defparam \FA2|Mult2~mac .enable_double_accum = "false";
+defparam \FA2|Mult2~mac .load_const_clock = "none";
+defparam \FA2|Mult2~mac .load_const_value = 0;
+defparam \FA2|Mult2~mac .mode_sub_location = 0;
+defparam \FA2|Mult2~mac .negate_clock = "none";
+defparam \FA2|Mult2~mac .operand_source_max = "input";
+defparam \FA2|Mult2~mac .operand_source_may = "input";
+defparam \FA2|Mult2~mac .operand_source_mbx = "input";
+defparam \FA2|Mult2~mac .operand_source_mby = "input";
+defparam \FA2|Mult2~mac .operation_mode = "m18x18_plus36";
+defparam \FA2|Mult2~mac .output_clock = "none";
+defparam \FA2|Mult2~mac .preadder_subtract_a = "false";
+defparam \FA2|Mult2~mac .preadder_subtract_b = "false";
+defparam \FA2|Mult2~mac .result_a_width = 64;
+defparam \FA2|Mult2~mac .signed_max = "false";
+defparam \FA2|Mult2~mac .signed_may = "false";
+defparam \FA2|Mult2~mac .signed_mbx = "true";
+defparam \FA2|Mult2~mac .signed_mby = "false";
+defparam \FA2|Mult2~mac .sub_clock = "none";
+defparam \FA2|Mult2~mac .use_chainadder = "false";
+// synopsys translate_on
+
+// Location: LABCELL_X22_Y44_N0
+cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
+// Equation(s):
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\~QUARTUS_CREATED_GND~I_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \~QUARTUS_CREATED_GND~I .extended_lut = "off";
+defparam \~QUARTUS_CREATED_GND~I .lut_mask = 64'h0000000000000000;
+defparam \~QUARTUS_CREATED_GND~I .shared_arith = "off";
+// synopsys translate_on
+
+endmodule
