@@ -6,13 +6,11 @@
 //LEDR displays result
 //HEX0 & HEX1 also displays result
 
-module DataPathSample(SW, KEY, CLOCK_50, LEDR, HEX0, HEX1);
-    input [9:0] SW;
+module DataPathSample(SW, KEY, CLOCK_50, LED);
+    input [3:0] SW;
     input [3:0] KEY;
     input CLOCK_50;
-    output [9:0] LEDR;
-    output [6:0] HEX0, HEX1;
-
+    output [7:0] LED;
     wire resetn;
     wire go;
 
@@ -24,21 +22,12 @@ module DataPathSample(SW, KEY, CLOCK_50, LEDR, HEX0, HEX1);
         .clk(CLOCK_50),
         .resetn(resetn),
         .go(go),
-        .data_in(SW[7:0]),
+        .data_in({4'b0000,SW[3:0]}),
         .data_result(data_result)
     );
       
-    assign LEDR[9:0] = {2'b00, data_result};
+    assign LED[7:0] =  data_result;
 
-    hex_decoder H0(
-        .hex_digit(data_result[3:0]), 
-        .segments(HEX0)
-        );
-        
-    hex_decoder H1(
-        .hex_digit(data_result[7:4]), 
-        .segments(HEX1)
-        );
 
 endmodule
 
