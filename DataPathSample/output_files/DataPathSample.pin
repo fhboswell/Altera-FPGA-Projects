@@ -203,7 +203,7 @@ VCCIO3B                      : AE13      : power  :                   : 2.5V    
 DNU                          : AE14      :        :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE15      :        :                   :         : 4A        :                
 GND                          : AE16      : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE17      :        :                   :         : 4A        :                
+KEY[2]                       : AE17      : input  : 2.5 V             :         : 4A        : N              
 GND                          : AE18      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE19      :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE20      :        :                   :         : 4A        :                
@@ -218,7 +218,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AE28      :        :                   :      
 GND                          : AF1       : gnd    :                   :         :           :                
 GND                          : AF2       : gnd    :                   :         :           :                
 GND                          : AF3       : gnd    :                   :         :           :                
-KEY[3]                       : AF4       : input  : 2.5 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF4       :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF5       :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF6       :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF7       :        :                   :         : 3B        :                
@@ -239,7 +239,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AF21      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF22      :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF23      :        :                   :         : 4A        :                
 GND                          : AF24      : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF25      :        :                   :         : 4A        :                
+KEY[3]                       : AF25      : input  : 2.5 V             :         : 4A        : N              
 LED[4]                       : AF26      : output : 2.5 V             :         : 5A        : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF27      :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF28      :        :                   :         : 4A        :                
@@ -665,7 +665,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : U9        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : U10       :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U11       :        :                   :         : 3B        :                
 GND                          : U12       : gnd    :                   :         :           :                
-KEY[2]                       : U13       : input  : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U13       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U14       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U15       :        :                   :         : 6B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U16       :        :                   :         : 6B        :                

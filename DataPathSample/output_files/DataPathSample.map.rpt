@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DataPathSample
-Wed Oct 11 15:39:53 2017
+Wed Oct 11 16:22:44 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -48,13 +48,13 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Oct 11 15:39:53 2017       ;
+; Analysis & Synthesis Status     ; Successful - Wed Oct 11 16:22:44 2017       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DataPathSample                              ;
 ; Top-level Entity Name           ; DataPathSample                              ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 30                                          ;
+; Total registers                 ; 46                                          ;
 ; Total pins                      ; 17                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -186,25 +186,25 @@ agreement for further details.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 21           ;
+; Estimate of Logic utilization (ALMs needed) ; 35           ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 41           ;
+; Combinational ALUT usage for logic          ; 66           ;
 ;     -- 7 input functions                    ; 0            ;
 ;     -- 6 input functions                    ; 0            ;
-;     -- 5 input functions                    ; 0            ;
-;     -- 4 input functions                    ; 8            ;
-;     -- <=3 input functions                  ; 33           ;
+;     -- 5 input functions                    ; 20           ;
+;     -- 4 input functions                    ; 23           ;
+;     -- <=3 input functions                  ; 23           ;
 ;                                             ;              ;
-; Dedicated logic registers                   ; 30           ;
+; Dedicated logic registers                   ; 46           ;
 ;                                             ;              ;
 ; I/O pins                                    ; 17           ;
 ;                                             ;              ;
 ; Total DSP Blocks                            ; 1            ;
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[0]~input ;
-; Maximum fan-out                             ; 33           ;
-; Total fan-out                               ; 272          ;
-; Average fan-out                             ; 2.57         ;
+; Maximum fan-out                             ; 47           ;
+; Total fan-out                               ; 445          ;
+; Average fan-out                             ; 3.03         ;
 +---------------------------------------------+--------------+
 
 
@@ -213,10 +213,10 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Entity Name    ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------+----------------+--------------+
-; |DataPathSample            ; 41 (0)              ; 30 (0)                    ; 0                 ; 1          ; 17   ; 0            ; |DataPathSample                      ; DataPathSample ; work         ;
-;    |part2:u0|              ; 41 (0)              ; 30 (0)                    ; 0                 ; 1          ; 0    ; 0            ; |DataPathSample|part2:u0             ; part2          ; work         ;
-;       |control:C0|         ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPathSample|part2:u0|control:C0  ; control        ; work         ;
-;       |datapath:D0|        ; 31 (31)             ; 20 (20)                   ; 0                 ; 1          ; 0    ; 0            ; |DataPathSample|part2:u0|datapath:D0 ; datapath       ; work         ;
+; |DataPathSample            ; 66 (0)              ; 46 (0)                    ; 0                 ; 1          ; 17   ; 0            ; |DataPathSample                      ; DataPathSample ; work         ;
+;    |part2:u0|              ; 66 (0)              ; 46 (0)                    ; 0                 ; 1          ; 0    ; 0            ; |DataPathSample|part2:u0             ; part2          ; work         ;
+;       |control:C0|         ; 17 (17)             ; 14 (14)                   ; 0                 ; 0          ; 0    ; 0            ; |DataPathSample|part2:u0|control:C0  ; control        ; work         ;
+;       |datapath:D0|        ; 49 (49)             ; 32 (32)                   ; 0                 ; 1          ; 0    ; 0            ; |DataPathSample|part2:u0|datapath:D0 ; datapath       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -234,22 +234,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |DataPathSample|part2:u0|control:C0|current_state                                                                                                                                                                                                                                           ;
-+-----------------------------+-------------------------+-------------------------+-----------------------------+------------------------+-----------------------------+------------------------+-----------------------------+------------------------+-----------------------------+------------------------+
-; Name                        ; current_state.S_CYCLE_1 ; current_state.S_CYCLE_0 ; current_state.S_LOAD_X_WAIT ; current_state.S_LOAD_X ; current_state.S_LOAD_C_WAIT ; current_state.S_LOAD_C ; current_state.S_LOAD_B_WAIT ; current_state.S_LOAD_B ; current_state.S_LOAD_A_WAIT ; current_state.S_LOAD_A ;
-+-----------------------------+-------------------------+-------------------------+-----------------------------+------------------------+-----------------------------+------------------------+-----------------------------+------------------------+-----------------------------+------------------------+
-; current_state.S_LOAD_A      ; 0                       ; 0                       ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 0                      ;
-; current_state.S_LOAD_A_WAIT ; 0                       ; 0                       ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 0                      ; 1                           ; 1                      ;
-; current_state.S_LOAD_B      ; 0                       ; 0                       ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 1                      ; 0                           ; 1                      ;
-; current_state.S_LOAD_B_WAIT ; 0                       ; 0                       ; 0                           ; 0                      ; 0                           ; 0                      ; 1                           ; 0                      ; 0                           ; 1                      ;
-; current_state.S_LOAD_C      ; 0                       ; 0                       ; 0                           ; 0                      ; 0                           ; 1                      ; 0                           ; 0                      ; 0                           ; 1                      ;
-; current_state.S_LOAD_C_WAIT ; 0                       ; 0                       ; 0                           ; 0                      ; 1                           ; 0                      ; 0                           ; 0                      ; 0                           ; 1                      ;
-; current_state.S_LOAD_X      ; 0                       ; 0                       ; 0                           ; 1                      ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 1                      ;
-; current_state.S_LOAD_X_WAIT ; 0                       ; 0                       ; 1                           ; 0                      ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 1                      ;
-; current_state.S_CYCLE_0     ; 0                       ; 1                       ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 1                      ;
-; current_state.S_CYCLE_1     ; 1                       ; 0                       ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 1                      ;
-+-----------------------------+-------------------------+-------------------------+-----------------------------+------------------------+-----------------------------+------------------------+-----------------------------+------------------------+-----------------------------+------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |DataPathSample|part2:u0|control:C0|current_state                                                                                                                                                                                                                                                                                                                                                   ;
++-----------------------------+-------------------------+-------------------------+-------------------------+-------------------------+-------------------------+-------------------------+-----------------------------+------------------------+-----------------------------+------------------------+-----------------------------+------------------------+-----------------------------+------------------------+
+; Name                        ; current_state.S_CYCLE_5 ; current_state.S_CYCLE_4 ; current_state.S_CYCLE_3 ; current_state.S_CYCLE_2 ; current_state.S_CYCLE_1 ; current_state.S_CYCLE_0 ; current_state.S_LOAD_X_WAIT ; current_state.S_LOAD_X ; current_state.S_LOAD_C_WAIT ; current_state.S_LOAD_C ; current_state.S_LOAD_B_WAIT ; current_state.S_LOAD_B ; current_state.S_LOAD_A_WAIT ; current_state.S_LOAD_A ;
++-----------------------------+-------------------------+-------------------------+-------------------------+-------------------------+-------------------------+-------------------------+-----------------------------+------------------------+-----------------------------+------------------------+-----------------------------+------------------------+-----------------------------+------------------------+
+; current_state.S_LOAD_A      ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 0                      ;
+; current_state.S_LOAD_A_WAIT ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 0                      ; 1                           ; 1                      ;
+; current_state.S_LOAD_B      ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 1                      ; 0                           ; 1                      ;
+; current_state.S_LOAD_B_WAIT ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                           ; 0                      ; 0                           ; 0                      ; 1                           ; 0                      ; 0                           ; 1                      ;
+; current_state.S_LOAD_C      ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                           ; 0                      ; 0                           ; 1                      ; 0                           ; 0                      ; 0                           ; 1                      ;
+; current_state.S_LOAD_C_WAIT ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                           ; 0                      ; 1                           ; 0                      ; 0                           ; 0                      ; 0                           ; 1                      ;
+; current_state.S_LOAD_X      ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                           ; 1                      ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 1                      ;
+; current_state.S_LOAD_X_WAIT ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 1                           ; 0                      ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 1                      ;
+; current_state.S_CYCLE_0     ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 1                       ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 1                      ;
+; current_state.S_CYCLE_1     ; 0                       ; 0                       ; 0                       ; 0                       ; 1                       ; 0                       ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 1                      ;
+; current_state.S_CYCLE_2     ; 0                       ; 0                       ; 0                       ; 1                       ; 0                       ; 0                       ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 1                      ;
+; current_state.S_CYCLE_3     ; 0                       ; 0                       ; 1                       ; 0                       ; 0                       ; 0                       ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 1                      ;
+; current_state.S_CYCLE_4     ; 0                       ; 1                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 1                      ;
+; current_state.S_CYCLE_5     ; 1                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                       ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 0                      ; 0                           ; 1                      ;
++-----------------------------+-------------------------+-------------------------+-------------------------+-------------------------+-------------------------+-------------------------+-----------------------------+------------------------+-----------------------------+------------------------+-----------------------------+------------------------+-----------------------------+------------------------+
 
 
 +---------------------------------------------------------------------------------+
@@ -257,15 +261,15 @@ Encoding Type:  One-Hot
 +----------------------------------------+----------------------------------------+
 ; Register name                          ; Reason for Removal                     ;
 +----------------------------------------+----------------------------------------+
-; part2:u0|datapath:D0|x[0..7]           ; Lost fanout                            ;
-; part2:u0|datapath:D0|b[0..7]           ; Lost fanout                            ;
 ; part2:u0|datapath:D0|c[5..7]           ; Merged with part2:u0|datapath:D0|c[4]  ;
+; part2:u0|datapath:D0|x[5..7]           ; Merged with part2:u0|datapath:D0|x[4]  ;
+; part2:u0|datapath:D0|x[4]              ; Stuck at GND due to stuck port data_in ;
 ; part2:u0|datapath:D0|c[4]              ; Stuck at GND due to stuck port data_in ;
 ; part2:u0|control:C0|current_state~2    ; Lost fanout                            ;
 ; part2:u0|control:C0|current_state~3    ; Lost fanout                            ;
 ; part2:u0|control:C0|current_state~4    ; Lost fanout                            ;
 ; part2:u0|control:C0|current_state~5    ; Lost fanout                            ;
-; Total Number of Removed Registers = 24 ;                                        ;
+; Total Number of Removed Registers = 12 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
 
@@ -274,12 +278,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 30    ;
-; Number of registers using Synchronous Clear  ; 12    ;
-; Number of registers using Synchronous Load   ; 8     ;
+; Total registers                              ; 46    ;
+; Number of registers using Synchronous Clear  ; 24    ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 20    ;
+; Number of registers using Clock Enable       ; 32    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -289,10 +293,13 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |DataPathSample|part2:u0|datapath:D0|c[0]           ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |DataPathSample|part2:u0|datapath:D0|data_result[0] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |DataPathSample|part2:u0|datapath:D0|a[7]           ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |DataPathSample|part2:u0|datapath:D0|a[3]           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |DataPathSample|part2:u0|datapath:D0|c[3]           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |DataPathSample|part2:u0|datapath:D0|x[2]           ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |DataPathSample|part2:u0|datapath:D0|data_result[2] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |DataPathSample|part2:u0|datapath:D0|a[7]           ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |DataPathSample|part2:u0|datapath:D0|b[7]           ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |DataPathSample|part2:u0|datapath:D0|Mux8           ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |DataPathSample|part2:u0|datapath:D0|Mux12          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 
 
@@ -310,24 +317,23 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 30                          ;
+; arriav_ff             ; 46                          ;
 ;     ENA               ; 8                           ;
-;     ENA SCLR          ; 4                           ;
-;     ENA SCLR SLD      ; 8                           ;
-;     plain             ; 10                          ;
-; arriav_lcell_comb     ; 41                          ;
+;     ENA SCLR          ; 24                          ;
+;     plain             ; 14                          ;
+; arriav_lcell_comb     ; 66                          ;
 ;     arith             ; 8                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 4                           ;
-;     normal            ; 33                          ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 14                          ;
 ;         4 data inputs ; 8                           ;
+;     normal            ; 58                          ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 11                          ;
+;         4 data inputs ; 15                          ;
+;         5 data inputs ; 20                          ;
 ; arriav_mac            ; 1                           ;
 ; boundary_port         ; 17                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.70                        ;
-; Average LUT depth     ; 1.05                        ;
+; Max LUT depth         ; 4.70                        ;
+; Average LUT depth     ; 2.41                        ;
 +-----------------------+-----------------------------+
 
 
@@ -346,7 +352,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Oct 11 15:39:43 2017
+    Info: Processing started: Wed Oct 11 16:22:33 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DataPathSample -c DataPathSample
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -354,16 +360,16 @@ Info (12021): Found 5 design units, including 5 entities, in source file poly_fu
     Info (12023): Found entity 1: DataPathSample File: /home/henryboswell/Desktop/Altera-FPGA-Projects/DataPathSample/poly_function.v Line: 9
     Info (12023): Found entity 2: part2 File: /home/henryboswell/Desktop/Altera-FPGA-Projects/DataPathSample/poly_function.v Line: 34
     Info (12023): Found entity 3: control File: /home/henryboswell/Desktop/Altera-FPGA-Projects/DataPathSample/poly_function.v Line: 88
-    Info (12023): Found entity 4: datapath File: /home/henryboswell/Desktop/Altera-FPGA-Projects/DataPathSample/poly_function.v Line: 185
-    Info (12023): Found entity 5: hex_decoder File: /home/henryboswell/Desktop/Altera-FPGA-Projects/DataPathSample/poly_function.v Line: 282
+    Info (12023): Found entity 4: datapath File: /home/henryboswell/Desktop/Altera-FPGA-Projects/DataPathSample/poly_function.v Line: 211
+    Info (12023): Found entity 5: hex_decoder File: /home/henryboswell/Desktop/Altera-FPGA-Projects/DataPathSample/poly_function.v Line: 308
 Info (12127): Elaborating entity "DataPathSample" for the top level hierarchy
 Info (12128): Elaborating entity "part2" for hierarchy "part2:u0" File: /home/henryboswell/Desktop/Altera-FPGA-Projects/DataPathSample/poly_function.v Line: 27
 Info (12128): Elaborating entity "control" for hierarchy "part2:u0|control:C0" File: /home/henryboswell/Desktop/Altera-FPGA-Projects/DataPathSample/poly_function.v Line: 64
-Warning (10270): Verilog HDL Case Statement warning at poly_function.v(146): incomplete case statement has no default case item File: /home/henryboswell/Desktop/Altera-FPGA-Projects/DataPathSample/poly_function.v Line: 146
-Info (10264): Verilog HDL Case Statement information at poly_function.v(146): all case item expressions in this case statement are onehot File: /home/henryboswell/Desktop/Altera-FPGA-Projects/DataPathSample/poly_function.v Line: 146
+Warning (10270): Verilog HDL Case Statement warning at poly_function.v(154): incomplete case statement has no default case item File: /home/henryboswell/Desktop/Altera-FPGA-Projects/DataPathSample/poly_function.v Line: 154
+Info (10264): Verilog HDL Case Statement information at poly_function.v(154): all case item expressions in this case statement are onehot File: /home/henryboswell/Desktop/Altera-FPGA-Projects/DataPathSample/poly_function.v Line: 154
 Info (12128): Elaborating entity "datapath" for hierarchy "part2:u0|datapath:D0" File: /home/henryboswell/Desktop/Altera-FPGA-Projects/DataPathSample/poly_function.v Line: 83
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 20 registers lost all their fanouts during netlist optimizations.
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 97 assignments for entity "DE10_Nano_Default" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_CONVST -entity DE10_Nano_Default was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_SCK -entity DE10_Nano_Default was ignored
@@ -467,15 +473,15 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[2]" File: /home/henryboswell/Desktop/Altera-FPGA-Projects/DataPathSample/poly_function.v Line: 11
     Warning (15610): No output dependent on input pin "KEY[3]" File: /home/henryboswell/Desktop/Altera-FPGA-Projects/DataPathSample/poly_function.v Line: 11
-Info (21057): Implemented 59 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 108 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 41 logic cells
+    Info (21061): Implemented 90 logic cells
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 103 warnings
-    Info: Peak virtual memory: 1044 megabytes
-    Info: Processing ended: Wed Oct 11 15:39:53 2017
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 1046 megabytes
+    Info: Processing ended: Wed Oct 11 16:22:44 2017
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:23
 
 
